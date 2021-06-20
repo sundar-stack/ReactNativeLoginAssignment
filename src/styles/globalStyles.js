@@ -1,0 +1,72 @@
+import {Dimensions, StyleSheet} from 'react-native'
+import { FONT_COLOR , BTN_SECONDARY_COLOR, BG_COLOR, BTN_PRIMARY_COLOR, ERR_COLOR} from '../constants'
+
+export const globalStyles = StyleSheet.create({
+    mainTitle:{
+        marginVertical:15,
+        marginHorizontal:20,
+        color:FONT_COLOR,
+        fontSize:25,
+        fontWeight:"bold",
+        paddingBottom:15,
+        borderColor:FONT_COLOR,
+        borderBottomWidth:1,
+    },
+    formWrapper:{
+        width:"100%",
+        alignItems:"center",
+    },
+    mainInput:{
+        marginVertical:5,
+        width:"100%",
+        borderColor:BTN_SECONDARY_COLOR,
+        color:FONT_COLOR,
+        borderWidth:1,
+        borderRadius:5,
+        paddingVertical:8,
+        paddingHorizontal:10,
+        fontSize:15, 
+    },
+    inputWrapper:{
+        flexDirection:"column",
+        width:"80%", 
+        marginVertical:5
+    },
+    label:{
+        color:FONT_COLOR,
+        marginVertical:2,
+        marginHorizontal:5,
+        fontSize:13,
+        fontWeight:"bold"
+    },
+    primaryButton:{
+        marginVertical:40,
+        marginHorizontal:5,
+        alignSelf:"center",
+        width:Dimensions.get("screen").width - 80,
+        backgroundColor:BTN_PRIMARY_COLOR,
+        height:40,
+        paddingVertical:5,
+        alignItems:"center",
+        justifyContent:"center",
+        color:"#fff",
+        borderRadius:5,
+        elevation:3
+    },
+    mediumTitle:{
+        color:FONT_COLOR,
+        fontSize:18,
+        fontWeight:"bold",
+    },
+    links:{
+        color:BTN_SECONDARY_COLOR,
+        fontSize:16,
+        fontWeight:"bold",
+    },
+    errorText:{
+        color:ERR_COLOR,
+        fontSize:13,
+        fontWeight:"bold",
+        fontStyle:"italic",
+    }
+})

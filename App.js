@@ -1,19 +1,20 @@
 import React from 'react';
-
+import {NavigationContainer} from '@react-navigation/native'
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
-  View,
 } from 'react-native';
+import { MainDrawerStackNavigator } from './src/routes/DrawerNavigator';
+import { BG_COLOR } from './src/constants';
 
 const App = ()=>{
   return (
-    <View>
-      <Text>Hello World</Text>
-    </View>
+    <NavigationContainer>
+        <StatusBar barStyle="light-content" backgroundColor={BG_COLOR}/>
+       <MainDrawerStackNavigator/>
+    </NavigationContainer>
   );
 };
 
